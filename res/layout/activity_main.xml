@@ -13,5 +13,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/crash_handle" />
+    
+        <Button
+        android:id="@+id/view_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crash_handle_btn"
+        android:text="@string/view_act" />
 
 </RelativeLayout>

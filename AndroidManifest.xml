@@ -22,8 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <activity android:name=".crashhandler.CrashHandleActivity"  />
+        <activity android:name=".crashhandler.CrashHandleActivity" />
+        <activity android:name=".views.ViewTouchActivity" />
+        <activity android:name=".views.SlideToDeleteActivity" />
     </application>
 
 </manifest>
