@@ -8,10 +8,16 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.WindowManager;
 import android.widget.AdapterView;
-import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.Scroller;
 
+/**
+ * 学习地址 : 
+ * http://blog.csdn.net/xiaanming/article/details/17539199
+ * Android 使用NineOldAndroids实现绚丽的ListView左右滑动删除Item效果 : http://blog.csdn.net/xiaanming/article/details/18311877
+ * @author mrsimple
+ * 
+ */
 public class SlideToDeleteItemListView extends ListView {
 
 	/**
@@ -108,8 +114,8 @@ public class SlideToDeleteItemListView extends ListView {
 	 */
 	@Override
 	public boolean dispatchTouchEvent(MotionEvent ev) {
-		if ( mScroller == null ) {
-			mScroller = new Scroller(getContext()) ;
+		if (mScroller == null) {
+			mScroller = new Scroller(getContext());
 		}
 		switch (ev.getAction()) {
 		case MotionEvent.ACTION_DOWN:
